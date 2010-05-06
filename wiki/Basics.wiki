@@ -16,7 +16,7 @@ NetServer server = new NetServer(config);
 server.Start();
 }}}
 
-The code above first creates a configuration. It has lots of properties you can change, but the default values should be pretty good for most applications. The string you provide in the constructor (MyExampleName) is an identifier to distinquish it from other applications using the lidgren library. Just make sure you use the same string in both server and client - or you will be unable to communicate between them.
+The code above first creates a configuration. It has lots of properties you can change, but the default values should be pretty good for most applications. The string you provide in the constructor (´MyExampleName´) is an identifier to distinquish it from other applications using the lidgren library. Just make sure you use the same string in both server and client - or you will be unable to communicate between them.
 
 Secondly we've set the local port the server should listen to. This is the port number we tell the client(s) what port number to connect to. The local port can be set for a client too, but it's not needed and not recommended.
 
