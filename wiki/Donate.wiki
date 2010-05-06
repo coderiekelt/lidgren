@@ -1,3 +1,4 @@
+#labels Featured
 If you feel this project is useful to you and want to support it and it's future development please consider donating money.
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=michael@lidgren.net&item_name=Lidgren+network+library"><img src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif">
