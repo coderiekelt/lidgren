@@ -1,0 +1,27 @@
+#labels Featured,Phase-Implementation
+= Message encryption=
+
+Messages can be encrypted using the XTEA algorithm. This is done like this:
+
+{{{
+NetXtea xtea = new NetXtea("TopSecret");
+
+NetOutgoingMessage msg = client.CreateMessage();
+msg.Write("Some content");
+msg.Write(42);
+msg.Encrypt(xtea);
+}}}
+
+Notice that encryption must be done _last_ and that after encryption no more data should be written to the message.
+
+Decrypting the message on arrival is done like this:
+
+{{{
+NetXtea xtea = new NetXtea("TopSecret");
+
+incomingMessage.Decrypt(xtea);
+}}}
+
+The xtea instance can be reused over the application lifetime.
+
+Note that this feature does not concern itself with synchronizing the password between hosts and it only encrypts the content of the message, not message headers.
