@@ -1,4 +1,4 @@
-#labels Featured
+#labels Featured,Phase-Implementation
 = Simulating bad network conditions =
 
 On the internet, your packets are likely to run in to all kinds of trouble. They will be delayed and lost and they might even arrive multiple times at the destination. Lidgren has a few option to simulate how your application or game will react when this happens.
