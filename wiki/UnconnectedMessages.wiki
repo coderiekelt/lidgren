@@ -1,4 +1,4 @@
-#labels Featured
+#labels Featured,Phase-Implementation
 = Unconnected messages =
 
 Normally when using the library you will create a connection and then start sending messages, but you don't have to. Lidgren can also send unconnected messages. This is how:
