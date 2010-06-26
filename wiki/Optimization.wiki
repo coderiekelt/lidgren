@@ -3,12 +3,12 @@
 
   * Recycle incoming messages
 
-  * Preallocate size in NetOutgoingMessage by using the CreateMessage(int) method
+  * Preallocate size in `NetOutgoingMessage` by using the `CreateMessage(int)` method
 
   * Disable unused message types
 
-  * Tweak the NetPeerConfiguration values
+  * Tweak the `NetPeerConfiguration` values
 
-  * Use NetOutgoingMessage.Write(value, numberOfBits) where applicable
+  * Use `NetOutgoingMessage.Write(value, numberOfBits)` where applicable
 
 _(not finished - under construction)_
