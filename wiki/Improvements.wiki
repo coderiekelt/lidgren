@@ -5,7 +5,7 @@
   * Disconnects and shutdown requests are now queued properly, so calling shutdown will still send any queued messages before shutting down
   * All messages are pooled/recycled for zero garbage
   * Reduced CPU usage and lower latencies (in the <1 ms range, but still) due to better socket polling
-  * All public members of NetPeer/NetConnection are completely thread safe
+  * All public members of `NetPeer/NetConnection` are completely thread safe
   * Larger number of delivery channels
   * More exact roundtrip measurement
   * Method serialize entire objects via reflection
@@ -14,7 +14,7 @@
   * Much better protection against malformed messages crashing the app
 
 API enhancements:
-  * NetPeerConfiguration immutable properties now locked once NetPeer is initialized
+  * `NetPeerConfiguration` immutable properties now locked once `NetPeer` is initialized
   * Messages cannot be send twice by accident
   * Impossible to confuse sending and receiving buffers since they're different classes
   * No more confusion if user should create a buffer or preallocate and reuse
