@@ -1,0 +1,12 @@
+#labels Unity3D,Phase-Implementation
+Two alterations are necessary to use Lidgren with the unity web player:
+
+Comment away the lines:
+
+#define IS_STOPWATCH_AVAILABLE
+
+... in NetTime.cs and...
+
+#define IS_MAC_AVAILABLE
+
+... in NetPeer.Internal.cs
