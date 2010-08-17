@@ -41,6 +41,7 @@ When the response then reaches the client, you can read the data you wrote on th
 
 {{{
 // Standard message reading loop
+NetIncomingMessage inc;
 while ((inc = Client.ReadMessage()) != null)
 {
     switch (inc.MessageType)
