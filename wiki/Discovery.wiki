@@ -22,6 +22,7 @@ This will send a discovery signal to your subnet; Here's how to receive the sign
 config.EnableMessageType(NetIncomingMessageType.DiscoveryRequest);
  
 // Standard message reading loop
+NetIncomingMessage inc;
 while ((inc = Server.ReadMessage()) != null)
 {
     switch (inc.MessageType)
