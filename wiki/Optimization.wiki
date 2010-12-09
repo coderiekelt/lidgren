@@ -1,5 +1,5 @@
 #labels Featured
-= How to optimize =
+= How to optimize Lidgren =
 
   * Recycle incoming messages. This will put less strain on the garbage collector and thus faster GC sweeps.
 
