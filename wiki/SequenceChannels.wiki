@@ -1,7 +1,7 @@
 #labels Featured,Phase-Implementation
 There is an override for `SendMessage()` which takes an integer called 'sequenceChannel' - this can be used for certain delivery methods, namely `UnreliableSequenced`, `ReliableSequenced` and `ReliableOrdered`.
 
-The sequence channel is a number between 0 and (`NetConstants.NetChannelsPerDeliveryMethod - 1`) - currently 31. The reason for this limitation is to reduce the amount of overhead per message.
+The sequence channel is a number between 0 and (`NetConstants.NetChannelsPerDeliveryMethod - 1`) - currently 31. The reason for this limitation is to reduce the amount of overhead per message. Note that there are this amount of channels *per delivery method*, not in total.
 
 Messages sent in a certain sequence channel will be dropped/withheld independently of messages sent in a different sequence channel.
 
@@ -24,4 +24,15 @@ have on ammo.
 We solve this by using different sequence channels for health and ammo
 messages. Message numbers are individual per sequence channel, so health
 and ammo message cannot clash.
+}}}
+
+Code:
+
+{{{
+// create a message
+NetOutgoingMessage om = peer.CreateMessage();
+om.Write("Hello internet");
+
+// send it as Reliable Sequenced channel number 8
+peer.SendMessage(om, connection, NetDeliveryMethod.ReliableSequenced, 8);
 }}}
