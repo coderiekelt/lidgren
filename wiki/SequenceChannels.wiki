@@ -1,7 +1,7 @@
 #labels Featured,Phase-Implementation
 There is an override for `SendMessage()` which takes an integer called 'sequenceChannel' - this can be used for certain delivery methods, namely `UnreliableSequenced`, `ReliableSequenced` and `ReliableOrdered`.
 
-The sequence channel is a number between 0 and (`NetConstants.NetChannelsPerDeliveryMethod - 1`) - currently 31.
+The sequence channel is a number between 0 and (`NetConstants.NetChannelsPerDeliveryMethod - 1`) - currently 31. The reason for this limitation is to reduce the amount of overhead per message.
 
 Messages sent in a certain sequence channel will be dropped/withheld independently of messages sent in a different sequence channel.
 
