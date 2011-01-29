@@ -25,4 +25,8 @@
 
   * *`ErrorMessage`* - Contains a single string of diagnostics.
 
+  * *`NatIntroductionSuccess`* - NAT traversal succeeded.
+
+  * *`ConnectionLatencyUpdated`* - Means the average latency for the connection has been updated
+ 
 Message types can be enabled or disabled in the `NetPeerConfiguration` using `EnableMessageType()` or `DisableMessageType()` methods.
