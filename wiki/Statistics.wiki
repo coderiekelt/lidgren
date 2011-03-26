@@ -1,5 +1,5 @@
 #labels Phase-Implementation
-= How to optimize Lidgren =
+= Statistics =
 
 Statistics in the library exists at two points; per peer and per connection. The peer statistics contains statistics for all connections held by the peer and is available thru the property NetPeer.Statistics.
 Per connection statistics is available thru the property NetConnection.Statistics.
