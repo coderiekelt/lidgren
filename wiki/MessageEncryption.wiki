@@ -1,7 +1,7 @@
 #labels Featured,Phase-Implementation
 = Message encryption=
 
-Messages can be encrypted using the XTEA, or other algorithms. This is done like this:
+Messages can be encrypted using the Xtea, or other algorithms. This is done like this:
 
 {{{
 INetEncryption algo = new NetXtea("TopSecret");
@@ -26,5 +26,5 @@ The algorithm instance can be reused over the application lifetime, but it is no
 
 Note that this feature does not concern itself with synchronizing the password between hosts and it only encrypts the content of the message, not message headers.
 
-Currently, only Xtea and XOR algorithm are implemented; but any class implementing the INetEncryption can be used.
-For block level algorithms there is a base class, NetBlockEncryption, that can be used to simplify such ciphers - you will only need to provide implementations for EncryptBlock, DecryptBlock and BlockSize.
+Currently, only Xtea and XOR algorithm are implemented; but any class implementing the `INetEncryption` can be used.
+For block level algorithms there is a base class, `NetBlockEncryption`, that can be used to simplify such ciphers - you will only need to provide implementations for `EncryptBlock`, `DecryptBlock` and `BlockSize`.
