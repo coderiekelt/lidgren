@@ -1,4 +1,6 @@
+#summary Unity3D support
 #labels Unity3D,Phase-Implementation
+
 Two alterations are necessary to use Lidgren with the unity web player:
 
 Comment away the lines:
