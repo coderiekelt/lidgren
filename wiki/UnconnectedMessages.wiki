@@ -1,4 +1,6 @@
+#summary Sending unconnected messages
 #labels Featured,Phase-Implementation
+
 = Unconnected messages =
 
 Normally when using the library you will create a connection and then start sending messages, but you don't have to. Lidgren can also send unconnected messages. This is how:
@@ -18,4 +20,4 @@ This will send an unconnected message to host.somewhere.com port 1234. The recei
 config.SetMessageTypeEnabled(NetIncomingMessageType.UnconnectedData, true);
 }}}
 
-When a message arrives; the sender can be gotten from msg.SenderEndpoint.
+When a message arrives; the sender can be gotten from `msg.SenderEndpoint`.
