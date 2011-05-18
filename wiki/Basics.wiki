@@ -1,5 +1,5 @@
+#summary The basics of using the library
 #labels Featured
-#Basics
 
 Lidgren network library is all about messages. There are two types of messages:
 
