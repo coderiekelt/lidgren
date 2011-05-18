@@ -1,4 +1,6 @@
+#summary Three different way to consume incoming messages
 #labels Featured,Phase-Implementation
+
 There are three different ways of consuming messages received by the library.
 
 1. *`Polling`*
