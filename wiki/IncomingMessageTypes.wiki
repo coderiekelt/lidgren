@@ -1,4 +1,6 @@
+#summary The different types of incoming messages
 #labels Featured
+
 = Incoming message types =
 
   * *`Error`* - This should never appear, it indicates a corrupt message.
