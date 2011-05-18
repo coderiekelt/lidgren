@@ -1,4 +1,6 @@
+#summary Optimizing for performance and bandwidth
 #labels Featured
+
 = How to optimize Lidgren =
 
   * Recycle incoming messages. This will put less strain on the garbage collector and thus faster GC sweeps.
