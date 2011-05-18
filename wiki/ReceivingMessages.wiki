@@ -16,7 +16,7 @@ while ((msg = peer.ReadMessage()) != null)
 
 2. *`Callback`*
 
-If your application is completely event/UI-driven and does not have an application loop per se, you can register a callback to fire when a message arrives.
+If your application is completely event/UI-driven and does not have an application loop per se, you can register a callback to fire when a message arrives. The registration must happen from the correct SynchronizationContext (ie. call RegisterReceivedCallback from the same thread you want to receive the message notification on)
 
 {{{
 peer.RegisterReceivedCallback(new SendOrPostCallback(GotMessage)); 
