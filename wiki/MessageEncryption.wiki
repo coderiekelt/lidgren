@@ -1,4 +1,6 @@
+#summary Encrypting and decrypting messages
 #labels Featured,Phase-Implementation
+
 = Message encryption=
 
 Messages can be encrypted using the Xtea, or other algorithms. This is done like this:
