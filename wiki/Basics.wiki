@@ -1,4 +1,6 @@
 #labels Featured
+#Basics
+
 Lidgren network library is all about messages. There are two types of messages:
 
 *Library messages* telling you things like a peer has connected or diagnostics messages (warnings, errors) when unexpected things happen.
