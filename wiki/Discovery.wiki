@@ -1,3 +1,4 @@
+#summary Peer discovery
 #labels Featured
 = Peer/server discovery =
 
