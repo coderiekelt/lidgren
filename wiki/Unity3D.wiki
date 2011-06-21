@@ -1,7 +1,7 @@
 #summary Unity3D support
 #labels Unity3D,Phase-Implementation
 
-Two alterations are necessary to use Lidgren with the unity web player:
+Three alterations are necessary to use Lidgren with the unity web player:
 
 Comment away the lines:
 
@@ -11,4 +11,8 @@ Comment away the lines:
 
 `#define IS_MAC_AVAILABLE`
 
-... in `NetPeer.Internal.cs`
+... in `NetPeer.Internal.cs` and...
+
+`#define IS_FULL_NET_AVAILABLE`
+
+... in `NetUtility.cs`
