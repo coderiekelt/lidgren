@@ -11,7 +11,7 @@
 
   * Tweak the `NetPeerConfiguration` values. They can help with latency, bandwidth usage and memory usage.
 
-  * Use `NetOutgoingMessage.Write(value, numberOfBits)` where applicable. This will reduce the amount of data you sent over the wire.
+  * To save on bandwidth; use the smallest data type necessary and consider using `Write(value, numbits)`, `WriteVariableInt32()`, `WriteRangedInteger()`, `WriteUnitSingle()` etc to encode your data.
 
   * Use unreliable channels for data that does not absolutely need to be reliable. This will reduce the amount of memory used to store not-yet-acknowledged messages. It will also reduce the amount of cpu used to track reliable messages.
 
