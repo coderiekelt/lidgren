@@ -7,4 +7,4 @@ If you feel this project is useful to you and want to support it and it's future
 
 [http://img.informer.com/icons/png/48/2566/2566224.png]
 
-You may also donate using bitcoin; please send to: {{{1PjAd3RBCvQSZ6HaNnGgDBhyea2pWcMTL7}}}
+You may also donate using bitcoin; please send to: {{{15Ys5CPUHTm5ryDsEDUqTNdpXNUc7xEWeB}}}
