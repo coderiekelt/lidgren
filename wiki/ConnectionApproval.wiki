@@ -1,4 +1,5 @@
 #summary Connection approval
+#labels Featured
 = Connection approval =
 
 Connection approval is a way for the server to accept or deny connections based on some data sent by the client.
